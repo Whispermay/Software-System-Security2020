@@ -65,3 +65,11 @@
 
 * 浏览器不要使用360浏览器，会被拦截，这里使用火狐浏览器
 ![](error.png)
+
+## 参考资料
+
+*  [VS Code + WampServer开发PHP环境搭建](https://blog.csdn.net/weixin_43712064/article/details/103836504?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase)
+
+* [wampserver安装配置与使用](https://blog.csdn.net/qq_34195507/article/details/94851028)
+
+  
