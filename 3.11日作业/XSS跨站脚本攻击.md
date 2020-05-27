@@ -53,18 +53,15 @@
 
 * 浏览器进入` localhost/test.html`，即为我们刚刚写的页面，尝试输入JAKE并提交，可以看到我们提交的内容被后端脚本显示出来
 
-  ![](C:\Users\Thinkpad\AppData\Roaming\Typora\typora-user-images\1583927100037.png)
+  ![](inputJack.png)
 
-  ![](C:\Users\Thinkpad\AppData\Roaming\Typora\typora-user-images\1583927193769.png)
+  ![](showJack.png)
 
 * 如果我们在输入框里输入` <script>alert("Bug!")</script>`，再次尝试提交，可以看到在html页面输入的内容被当做脚本文件内容执行了
 
-  ![](C:\Users\Thinkpad\AppData\Roaming\Typora\typora-user-images\1583927469781.png)
+  ![](MessageBox.png)
 
 ## 遇到的问题
 
 * 浏览器不要使用360浏览器，会被拦截，这里使用火狐浏览器
-
-  
-
-![](C:\Users\Thinkpad\AppData\Roaming\Typora\typora-user-images\1583927676394.png)
+![](error.png)
