@@ -68,10 +68,38 @@
 * 636c6163，6578652e是 calc.exe的big ending 反写。压入栈以后，就形成了字符串。这样就把字符串嵌入机器指令了，作为机器指令的操作数。
 
 ## 其他Shellcode
+* Windows/x64 - WinExec Add-Admin Dynamic Null-Free Shellcode 
+  - 在本地计算机中添加一个管理员权限的用户账户，用户名称为`ROOT`，密码为`I@mR00T$`
+  - ![](add-admin.png)
+  - ![](net-User.png)
 
+* Windows/x86 - user32!MessageBox(Hello World!) + Null-Free Shellcode 
 
+  - 弹出一个`hello world'消息框
+  - ![](MessageBox-code.png)
+  - ![](MessageBox.png)
 
-* 
+* Linux/x86_64 - Delete File (test.txt) Shellcode 
+
+  - 将文件夹中的`test.txt`文件删除
+
+  - 在Ubuntu下安装GCC和其他一些Linux系统有点不一样，ubuntu 18.04下安装gcc命令：
+
+    ```bash
+    sudo apt-get  install  build-essential
+    ```
+
+  - 在`linux`虚拟机中新建`delect.c`文件，将代码复制进去，输入命令，将.c文件编译链接成可执行文件
+
+    ```shell
+    gcc -fno-stack-protector -z execstack delect.c -o delete
+    ```
+
+  - 运行文件`./delete`
+
+  - 可以看到`test.txt`文件被删除
+
+    ![](deletetest.png)
 
 ### 编写下载执行的Shellcode
 
